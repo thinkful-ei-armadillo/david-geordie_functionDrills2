@@ -53,8 +53,10 @@ function decode(message) {
 function getDays(month, leapYear) {
     let result;
     if(month === 'February' && leapYear === true){
-        result = "February has 29 days";
-    }
+      result = "February has 29 days";
+      console.log(result)
+      return result;
+    } else {
     switch(month) {
         case 'January':
         case 'March':
@@ -77,6 +79,7 @@ function getDays(month, leapYear) {
         default: 
             result = "Please enter a valid month!"
     }   
+    }
     
     console.log(result);
     return result;
