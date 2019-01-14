@@ -72,11 +72,12 @@ function getDays(month, leapYear) {
             result = `${month} has 30 days!`;
             break;
         case 'February':
-            result = "February has 28 days!"
+            result = "February has 28 days!";
+          break;
         default: 
             result = "Please enter a valid month!"
     }   
-    }
+    
     console.log(result);
-    return(result);
+    return result;
 }
