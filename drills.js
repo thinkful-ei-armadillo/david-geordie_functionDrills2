@@ -90,8 +90,33 @@ function playRps(playerChoice){
         throw new Error('Please enter 1, 2, or 3')
     } else {
         const randomNo = Math.floor(Math.random() * 3) + 1;
+        let result;
         if (playerChoice === 1){
-
+            if (randomNo === 1){
+                result = 'it\'s a tie!';
+            } else if(randomNo === 2){
+                result = 'The computer wins!';
+            } else {
+                result = 'You win!';
+            }
+        } else if (playerChoice === 2){
+            if (randomNo === 1){
+                result = 'You win!';
+            } else if (randomNo === 2){
+                result = 'It\s a tie!';
+            } else {
+                result = 'The computer wins!';
+            }
+        } else {
+            if (randomNo === 1){
+                result = 'You win!';
+            } else if (randomNo === 2){
+                result = 'The computer wins!';
+            } else {
+                result = 'It\s a tie!';
+            }
         }
+        return result;
+
     }
 }
