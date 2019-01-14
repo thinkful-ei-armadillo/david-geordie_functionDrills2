@@ -10,5 +10,18 @@ function jediName (firstName, lastName) {
     };
     let final = result.join('');
     return final;
-    console.log(final);
 };
+
+function beyond(num){
+    if (typeof num !== 'number' || num === undefined){
+        console.log('Please enter a number')
+    } else if (isFinite(num) === false){
+        console.log('and beyond!')
+    } else if (num > 0){
+        console.log('to infinity!')
+    } else if (num < 0){
+        console.log('to negative infinity!')
+    } else if (num === 0){
+        console.log('staying home')
+    }
+}
