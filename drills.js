@@ -84,3 +84,14 @@ function getDays(month, leapYear) {
     console.log(result);
     return result;
 }
+
+function playRps(playerChoice){
+    if (playerChoice !== 1 && playerChoice !== 2 && playerChoice !== 3){
+        throw new Error('Please enter 1, 2, or 3')
+    } else {
+        const randomNo = Math.floor(Math.random() * 3) + 1;
+        if (playerChoice === 1){
+
+        }
+    }
+}
