@@ -49,3 +49,34 @@ function decode(message) {
     let result = letters.join('');
     console.log(result);
 }
+
+function getDays(month, leapYear) {
+    let result;
+    if(month === 'February' && leapYear === true){
+        result = "February has 29 days";
+    }
+    switch(month) {
+        case 'January':
+        case 'March':
+        case 'May':
+        case 'July':
+        case 'August':
+        case 'October':
+        case 'December':
+            result = `${month} has 31 days!`;
+            break;
+        case 'April':
+        case 'June':
+        case 'September':
+        case 'November':
+            result = `${month} has 30 days!`;
+            break;
+        case 'February':
+            result = "February has 28 days!"
+        default: 
+            result = "Please enter a valid month!"
+    }   
+    }
+    console.log(result);
+    return(result);
+}
